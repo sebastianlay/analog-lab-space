@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>analog lab space</title>
+  <meta name="description" content="A database of film labs that develop and scan analog films">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://analoglab.space/">
+  <meta property="og:title" content="analog lab space">
+  <meta property="og:description" content="A database of film labs that develop and scan analog films">
+  <meta property="og:image" content="https://analoglab.space/preview.png">
+  <meta property="og:image:secure_url" content="https://analoglab.space/preview.png">
+  <meta property="og:image:width" content="640"> 
+  <meta property="og:image:height" content="320">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://analoglab.space/">
+  <meta property="twitter:title" content="analog lab space">
+  <meta property="twitter:description" content="A database of film labs that develop and scan analog films">
+  <meta property="twitter:image" content="https://analoglab.space/preview.png">
+
+  <link href="manifest.webmanifest" rel="manifest">
+  <link href="favicon.svg" rel="icon">
+  <link href="favicon.svg" rel="shortcut icon">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" integrity="sha384-S79GKBTcUfHtxatbZRfZ6TON5gq7sJV6JZBWINoU8LzQw9XK0Y3Mls2ZjZ72nlDp" crossorigin="anonymous">
+  <link href="fonts/ek-mukta-400-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/ek-mukta-700-latin.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="dark">
+  <div id="app">
+    <header>
+      <div class="switch"></div>
+      <h1><a href="/">analog lab<span>.space</span></a></h1>
+      <p>a database of film labs that develop and scan analog films</p>
+      <nav><a href="/" class="active">overview</a> / <a href="/faq">frequently asked questions</a></nav>
+    </header>
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js" integrity="sha384-166DST7aDCwbhRjuaUoVxToZHbklWSS1TfWL0zXoWWOtlv3j59yaZxAALnE1ZtP4" crossorigin="anonymous"></script>
+  <script src="js/current-labs.js?d=20230818"></script>
+  <script src="js/script-index.js?d=20230818"></script>
+  <script src="js/script-theme.js?d=20230818"></script>
+</body>
+</html>
